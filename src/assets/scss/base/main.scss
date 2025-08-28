@@ -13,8 +13,9 @@ html {
 }
 
 .body {
-    color: var(--neutral-colors-100);
-    background-color: var(--neutral-colors-10);
+    overflow-x: hidden;
+    color: var(--neutral-color-100);
+    background-color: var(--neutral-color-10);
 }
 
 img {
@@ -23,14 +24,14 @@ img {
     object-fit: cover;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-p, 
-ul, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
 ol {
     margin: 0;
 }
@@ -58,8 +59,13 @@ button {
 }
 
 .container {
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: var(--container-padding);
-    max-width: calc(var(--container-width) + (var(--container-padding) * 2));
-    
+    max-width: calc(var(--container-width) + (var(--container-padding-calc) * 2));
+}
+
+.hidden {
+    font-size: 0;
+    opacity: 0;
+    visibility: hidden;
 }
