@@ -108,7 +108,8 @@
 
             &::before {
                 content: '';
-                display: inline-block;
+                display: flex;
+                flex-shrink: 0;
                 width: 76px;
                 height: 1px;
                 background-color: var(--neutral-color-100);

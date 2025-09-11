@@ -1,5 +1,7 @@
 .header {
     padding: 26px 0 22px;
+    background-color: transparent;
+
 
     @include mobile {
         padding: 22px 0 18px;
@@ -46,7 +48,7 @@
             flex-direction: column;
             justify-content: center;
             width: 80dvw;
-            height: 100dvh;
+            height: 100%;
             background-color: var(--neutral-color-10);
             opacity: 0;
             visibility: hidden;
@@ -179,6 +181,4 @@
 
 .burger {
     @include burger;
-    position: relative;
-    top: -3px;
 }
