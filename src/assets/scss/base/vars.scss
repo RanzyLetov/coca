@@ -19,11 +19,22 @@
     --logo-color-text: #101010;
     --logo-color-circle: #101010;
 
+    // overview color
+    --overview-color-70: #1d1e25;
+
     // container
     --container-padding-calc: 15px;
     --container-padding: 0 var(--container-padding-calc);
     --container-width: 1200px;
     
+    @include mini-desktop {
+        --container-width: 1000px;
+    }
+
+    @include tablet {
+        --container-width: 860px;
+    }
+
     @include mobile {
         --container-width: 480px;
     }
@@ -50,4 +61,7 @@
 
     // success colors
     --sucess-color-70: #e2f8f033;
+
+    // overview color
+    --overview-color-70: #18181d;
 }
