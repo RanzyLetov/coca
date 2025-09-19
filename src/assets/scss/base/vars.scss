@@ -26,7 +26,7 @@
     --container-padding-calc: 15px;
     --container-padding: 0 var(--container-padding-calc);
     --container-width: 1200px;
-    
+
     @include mini-desktop {
         --container-width: 1000px;
     }
