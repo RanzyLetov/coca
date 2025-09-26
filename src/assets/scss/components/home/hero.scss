@@ -239,6 +239,10 @@
         text-align: left;
         background: #000;
 
+        @include small-mobile {
+            padding: 10px 15px;
+        }
+
         &-head {
             &-th {
                 font-weight: 600;
