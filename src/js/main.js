@@ -7,8 +7,10 @@ import {
     useInsightSlider,
     useTestimonialsSlider,
 } from './components/home/slider';
+import { useFooterAccordion } from './components/dropdown';
 
 useTheme();
 useBurger();
 useInsightSlider();
 useTestimonialsSlider();
+useFooterAccordion();

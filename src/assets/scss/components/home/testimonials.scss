@@ -44,17 +44,6 @@
         }
     }
 
-    &__slider-wrapper {
-        // &::before {
-        //     content: '';
-        //     display: inline-block;
-        //     width: 115px;
-        //     height: 77px;
-        //     background: url('../icons/quotation-marks-icon.svg');
-
-        // }
-    }
-
     &__slider {
         @include flex-justify-center;
         max-width: 898px;
@@ -115,7 +104,6 @@
 
         @include mini-desktop {
             transform: translateY(5px);
-            // transform: none;
         }
     }
 
