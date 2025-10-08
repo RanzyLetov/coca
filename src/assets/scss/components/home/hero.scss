@@ -10,55 +10,6 @@
         min-height: calc(100dvh - 128px);
     }
 
-    &::before {
-        top: 50px;
-        left: 181px;
-        width: 551px;
-        height: 551px;
-        background: #fa7515;
-        filter: blur(220px);
-
-        @include mini-desktop {
-            left: 80px;
-            width: 351px;
-            height: 351px;
-        }
-
-        @include small-tablet {
-            width: 250px;
-            height: 250px;
-        }
-
-        @include small-mobile {
-            width: 10px;
-            height: 10px;
-        }
-    }
-
-    &::after {
-        right: 0;
-        bottom: 0;
-        width: 525px;
-        height: 525px;
-        background: var(--sucess-color-70);
-        filter: blur(220px);
-
-        @include mini-desktop {
-            width: 321px;
-            height: 321px;
-        }
-    }
-
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        z-index: var(--z-index-0);
-        display: inline-block;
-        border-radius: 50%;
-        opacity: 0.2;
-    }
-
     &__container {
         position: relative;
 
