@@ -1,0 +1,144 @@
+.hero {
+    padding: 105px 0 135px;
+
+    @include mobile {
+        padding: 55px 0 70px;
+    }
+
+    &__text {
+        position: relative;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 118px;
+        max-width: 950px;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include mobile {
+            margin-bottom: 58px;
+        }
+    }
+
+    &__descr {
+        margin-bottom: 135px;
+        max-width: 830px;
+        line-height: 131%;
+        letter-spacing: -0.03em;
+
+        &::before {
+            transform: translateY(-82px);
+        }
+
+        @include tablet {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
+
+    &__link-path {
+        position: absolute;
+        right: 50px;
+        transform: translateY(-300px);
+
+        @include mini-desktop {
+            right: 0;
+        }
+
+        @include tablet {
+            position: inherit;
+            margin-bottom: 50px;
+            transform: none;
+        }
+    }
+
+    &__link-path img {
+        flex-shrink: 0;
+        width: 128px;
+        height: 128px;
+    }
+
+    &__link-path svg rect,
+    &__link-path svg circle,
+    &__link-path svg path {
+        fill: var(--neutral-color-95);
+    }
+
+    &__swiper {
+        height: 616px;
+
+        @include tablet {
+            height: 500px;
+        }
+
+        @include mobile {
+            height: 428px;
+        }
+
+        &-slide {
+            min-width: 502px;
+
+            @include mini-desktop {
+                min-width: 402px;
+            }
+
+            @include mobile {
+                min-width: 330px;
+            }
+        }
+    }
+
+    &__slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &-img {
+            margin-bottom: 24px;
+
+            @include tablet {
+                margin-bottom: 12px;
+            }
+        }
+
+        &-title {
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+
+            @include tablet {
+                margin-bottom: 4px;
+            }
+        }
+
+        &-descr {
+            font-weight: 500;
+            line-height: 178%;
+            color: var(--neutral-color-150);
+
+            @include tablet {
+                line-height: 100%;
+            }
+        }
+
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            border-radius: 100px;
+            padding: 16px 32px;
+            color: var(--neutral-color-10);
+            background: var(--neutral-color-100);
+        }
+    }
+}
