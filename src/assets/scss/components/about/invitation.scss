@@ -1,0 +1,51 @@
+.invitation {
+    padding-bottom: 160px;
+
+    @include mobile {
+        padding-bottom: 80px;
+    }
+
+    &__wrapper {
+        @include flex-all-between;
+
+        @include tablet {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        max-width: 626px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+
+        @include tablet {
+            margin-bottom: 24px;
+            max-width: none;
+        }
+    }
+
+    &__descr {
+        margin-bottom: 24px;
+        max-width: 506px;
+        font-weight: 500;
+        line-height: 178%;
+        color: var(--neutral-color-150);
+
+        @include tablet {
+            max-width: none;
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--neutral-color-100);
+        transition: opacity var(--transition);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
