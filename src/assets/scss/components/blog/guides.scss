@@ -1,0 +1,52 @@
+.guides {
+    padding: 120px 0;
+    background-color: var(--black-bg-color-70);
+
+    @include mobile {
+        padding: 60px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 32px;
+
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column {
+        display: flex;
+        gap: 159px;
+        flex-direction: column;
+        max-width: 584px;
+
+        @include tablet {
+            gap: 80px;
+        }
+
+        @include mobile {
+            &:not(:last-child) {
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    &__block {
+        &-img {
+            margin-bottom: 24px;
+        }
+
+        &-title {
+            margin-bottom: 24px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        &-descr {
+            font-weight: 500;
+            line-height: 178%;
+            color: var(--neutral-color-150);
+        }
+    }
+}
