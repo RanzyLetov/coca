@@ -1,9 +1,17 @@
 .articles {
     padding: 160px 0;
 
+    @include mobile {
+        padding: 80px 0;
+    }
+
     &__text {
         margin-bottom: 80px;
         max-width: 435px;
+
+        @include mobile {
+            margin-bottom: 40px;
+        }
     }
 
     &__title {
@@ -20,6 +28,10 @@
 
     &__swiper {
         min-height: 995px;
+
+        @include mobile {
+            min-height: 770px;
+        }
     }
 
     &__slide {
@@ -46,6 +58,7 @@
         }
 
         &-btn {
+            margin-bottom: 16px;
             border: 1px solid #ced1d8;
             border-radius: 100px;
             padding: 16px 32px;
@@ -63,7 +76,11 @@
         transform: translateY(-370%);
 
         @include mini-desktop {
-            transform: translateY(5px);
+            transform: translateY(-45px);
+        }
+
+        @include mobile {
+            transform: translateY(-25px);
         }
     }
 
